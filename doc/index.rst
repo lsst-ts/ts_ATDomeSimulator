@@ -6,62 +6,32 @@
 lsst.ts.ATDome
 ##############
 
-Controller for the LSST auxiliary telescope dome.
-
-.. _lsst.ts.ATDome-using:
-
-Using lsst.ts.ATDome
-====================
-
-Build and Test
---------------
-
-This package has the following requirements:
-
-* ts_salobj
-* The SALPY_ATDome SAL library
-
-The package is compatible with LSST DM's ``scons`` build system and ``eups`` package management system.
-Assuming you have the basic LSST DM stack installed you can do the following, from within the package directory:
-
-* ``setup -r .`` to setup the package and dependencies.
-* ``scons`` to build the package and run unit tests.
-* ``scons install declare`` to install the package and declare it to eups.
-* ``package-docs build`` to build the documentation.
-  This requires ``documenteer``; see `building single package docs`_ for installation instructions.
-
-Usage
------
-
-The primary classes are:
-
-* `ATDomeCsc`: controller for the auxiliary telescope dome.
-* `MockDomeController`: simulator for the auxiliary telescope dome TCP/IP interface.
-
-Run the ``ATDome`` controller  using ``bin/run_atdome.py`` (which only exists after you build the package).
-
-.. _building single package docs: https://developer.lsst.io/stack/building-single-package-docs.html
-
-.. _lsst.ts.ATDome-contributing:
-
-Contributing
-============
-
-``lsst.ts.ATDome`` is developed at https://github.com/lsst-ts/ts_ATDome.
-You can find Jira issues for this module using `labels=ts_ATDome <https://jira.lsstcorp.org/issues/?jql=project%20%3D%20DM%20AND%20labels%20%20%3D%20ts_ATDome>`_.
-
-.. _lsst.ts.ATDome-pyapi:
-
-Python API reference
-====================
-
-.. automodapi:: lsst.ts.ATDome
-   :no-main-docstr:
-   :no-inheritance-diagram:
-
-Revision History
+General Overview
 ================
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum commodo facilisis. Donec porta magna eget neque pretium convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sodales quam ut quam cursus faucibus. Nunc faucibus pellentesque justo faucibus posuere. Mauris in quam eget lorem luctus elementum sit amet sit amet magna. Duis eu diam tellus. Mauris fermentum mattis risus fringilla faucibus. Maecenas massa arcu, lacinia eu nisl eget, dignissim efficitur lorem. Vivamus id feugiat quam, vel tristique dui.
+
+.. note:: If you are interested in viewing other branches of this repository append a `/v` to the end of the url link. For example `https://ts-xml.lsst.io/v/`
+
+
+Software Documentation
+======================
+Continue to this page to learn more about the Classes used, API's and how to develop and contribute to the ATDome software packages.
+
+Or visit one of the quicklinks below.
 
 .. toctree::
-    revision_history
+    softwareDoc/software_doc
+    :maxdepth: 2
+
+.. toctree::
+    softwareDoc/revision_history
     :maxdepth: 1
+
+
+User Documentation
+==================
+Continue to this page to learn how to operate and use the ATDome. 
+
+.. toctree::
+    userDoc/user_doc
+    :maxdepth: 2
